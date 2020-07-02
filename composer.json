@@ -1,0 +1,51 @@
+{
+    "name": "noardcode/laravel-forms",
+    "description": "This Laravel package provides a wide array of form-components that can be used in html forms",
+    "type": "library",
+    "keywords": [
+        "noardcode",
+        "laravel-forms",
+        "laravel",
+        "forms"
+    ],
+    "homepage": "https://github.com/noardcode/laravel-forms",
+    "license": "MIT",
+    "require": {
+        "laravel/framework": "^7.0",
+        "php": "^7.4",
+        "laravelcollective/html": "^6.1"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^9.1.5"
+    },
+    "authors": [
+        {
+            "name": "Roy Voetman",
+            "email": "roy@noardcode.nl"
+        },
+        {
+            "name": "Jesse Alkema",
+            "email": "jesse@noardcode.nl"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Noardcode\\Forms\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Noardcode\\Forms\\Test\\": "tests"
+        }
+    },
+    "scripts": {
+        "test": "vendor/bin/phpunit"
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "FormsServiceProvider"
+            ]
+        }
+    }
+}
