@@ -1,6 +1,6 @@
 <div class="form-group">
     @if($showLabel)
-        <label for="{{ $id ?? ($name ?? '') }}">{{ __('fields.' . $label) }}</label>
+        <label for="{{ $id ?? ($name ?? '') }}">{{ $translate($label ?? $name) }}</label>
     @endif
     <div class="input-group">
         @if(!empty($prepend))
@@ -10,11 +10,7 @@
                 </span>
             </div>
         @endif
-        {{ Form::text($name, $value, ['class' => 'form-control ' . $classes ?? null, 'id' => $id ?? ($name ?? null), 'placeholder' => $placeholder, 'disabled' => $disabled]) }}
-        @if ($errors->has(Illuminate\Support\Str::dotted($name)))
-            <div class="invalid-feedback d-block">
-                {{ $errors->first(Illuminate\Support\Str::dotted($name)) }}
-            </div>
-        @endif
+        {{ Form::text($name, $value, ['class' => 'form-control' . (' ' . ($classes ?? null)), 'id' => $id ?? ($name ?? null), 'placeholder' => $placeholder, 'disabled' => $disabled]) }}
+        @include("noardcode::validation-errors")
     </div>
 </div>

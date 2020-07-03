@@ -4,6 +4,7 @@ namespace Noardcode\Forms\Components;
 
 use Illuminate\Contracts\Support\Renderable;
 use Illuminate\View\Component;
+use Noardcode\Forms\Traits\HasTranslations;
 
 /**
  * Class Range
@@ -12,6 +13,8 @@ use Illuminate\View\Component;
  */
 class Range extends Component
 {
+    use HasTranslations;
+
     /**
      * @var string
      */

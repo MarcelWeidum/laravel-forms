@@ -4,9 +4,12 @@ namespace Noardcode\Forms\Components;
 
 use Illuminate\Contracts\Support\Renderable;
 use Illuminate\View\Component;
+use Noardcode\Forms\Traits\HasTranslations;
 
 class Text extends Component
 {
+    use HasTranslations;
+
     /**
      * @var string
      */
