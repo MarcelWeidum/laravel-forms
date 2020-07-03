@@ -9,6 +9,7 @@
          convertWarningsToExceptions="true"
          processIsolation="false"
          stopOnFailure="false">
+
     <testsuites>
         <testsuite name="Noardcode Test Suite">
             <directory>tests</directory>
@@ -19,4 +20,5 @@
             <directory suffix=".php">src/</directory>
         </whitelist>
     </filter>
+
 </phpunit>
