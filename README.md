@@ -5,6 +5,8 @@ This Laravel package provides a wide array of form-components that can be used i
 [![MIT Licensed](https://img.shields.io/badge/license-MIT-brightgreen.svg?style=flat-square)](LICENSE)
 [![Total Downloads](https://img.shields.io/packagist/dt/noardcode/laravel-forms.svg?style=flat-square)](https://packagist.org/packages/noardcode/laravel-forms)
 
+## This package is currently under development
+
 ## Installation
 
 ```bash
