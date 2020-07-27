@@ -16,7 +16,7 @@ composer require noardcode/laravel-forms
 ### Javascript dependencies
 
 ```bash
-npm install boostrap
+npm install bootstrap
 ```
 
 ### Publish translations (optional)
